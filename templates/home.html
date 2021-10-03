@@ -1,0 +1,15 @@
+{% extends "_base.html" %}
+
+{% block title %}
+    Home
+{% endblock title%}
+
+
+{% block body %}
+    <h1 class="home-title">{{ data.title}}</h1>
+    <h3 class="subtitle">{{ data.subtitle }}</h3>
+    <div class="photo-container" style="background-image: url({{ photo.image.url }})"></div>
+    <p1>{{ data.content}}</p1>
+
+
+{% endblock body %}

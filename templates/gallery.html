@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+
+{% block title %}
+    Gallery
+{% endblock title%}
+
+
+{% block body %}
+
+    <div class="gallery-base">
+
+        <div class="gallery-container">
+
+        {% for photo_data in photos %}
+            <a href="/gallery/{{ photo_data.slug }}/">
+                 <div class="photo-thumbnail" style="background-image: url({{ photo_data.image.url }})"></div>
+
+            </a>
+        {% endfor %}
+        </div>
+
+
+        <div class="category-menu" id="category-menu">
+                {% include "_category_menu.html" %}
+        </div>
+
+
+
+    </div>
+
+
+{% endblock body %}

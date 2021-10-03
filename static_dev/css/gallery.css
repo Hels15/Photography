@@ -1,0 +1,48 @@
+.gallery-base{
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 150px;
+
+}
+
+.gallery-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+
+
+}
+.photo-thumbnail{
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.gallery-base. menu-container {
+    background-color: white;
+    color: #00d2da;
+    border: 1px solid rgb(217, 187, 187);
+    position: sticky;
+    top: 0;
+}
+.category-menu{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+
+
+}
+
+.menu-container h3:hover{
+    color: #00d2da;
+
+}
+
+.category-menu.active{
+     color: #00d2da;
+}
